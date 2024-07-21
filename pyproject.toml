@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django_firewall"
+version = "0.0.1"
+authors = [
+  { name="Alexander Chaika", email="manti.by@gmail.com" },
+]
+description = "Django Firewall library"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/manti-by/django_firewall"
+Issues = "https://github.com/manti-by/django_firewall/issues"
