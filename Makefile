@@ -1,10 +1,14 @@
 build:
+	rm -rf dist/*
 	python -m build
 
-install:
-	pip install dist/django_firewall-0.0.1.tar.gz
+upload:
+	twine upload --skip-existing --repository testpypi dist/*
 
-test: build install
+install:
+	pip install -e .
+
+test: install
 	pytest --disable-warnings tests/
 
 check:
